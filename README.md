@@ -3,7 +3,7 @@ Hibernate-powered, applications and services with absolute minimum fuss.
 
 ## Modules
 
-[comment]: <> (1. Hibernate-00-Helloworld)
+1. Hibernate-00-Helloworld
    
 
 [comment]: <> (2. Hibernate-01-Entity-Mapping)
