@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <groupId>com.geekcolab.development</groupId>
+        <artifactId>Hibernate</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>Hibernate-03-Association-Mapping</artifactId>
+    <packaging>pom</packaging>
+
+    <name>Hibernate-03-Association-Mapping</name>
+    <description>Hibernate Persistence API Applications</description>
+
+    <modules>
+        <module>Hibernate-03-Association-Mapping-01</module>
+        <module>Hibernate-03-Association-Mapping-02</module>
+        <module>Hibernate-03-Association-Mapping-03</module>
+        <module>Hibernate-03-Association-Mapping-04</module>
+    </modules>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${maven.compiler.version}</version>
+                    <configuration>
+                        <source>${java.version}</source>
+                        <target>${java.version}</target>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+</project>

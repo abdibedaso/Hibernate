@@ -6,13 +6,13 @@ Hibernate-powered, applications and services with absolute minimum fuss.
 1. Hibernate-00-Helloworld
    
 
-[comment]: <> (2. Hibernate-01-Entity-Mapping)
+2. Hibernate-01-Entity-Mapping
 
    
-[comment]: <> (4. Hibernate-02-Persistence-API)
+4. Hibernate-02-Persistence-API
 
 
-[comment]: <> (5. Hibernate-03-Association-Mapping)
+5. Hibernate-03-Association-Mapping
 
 
 [comment]: <> (6. Hibernate-04-Collection-Mapping)
