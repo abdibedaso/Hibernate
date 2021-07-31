@@ -16,7 +16,7 @@
         <module>Hibernate-Shared</module>
         <module>Hibernate-00-Helloworld</module>
         <module>Hibernate-01-Entity-Mapping</module>
-<!--        <module>Hibernate-02-Persistence-API</module>-->
+        <module>Hibernate-02-Persistence-API</module>
 <!--        <module>Hibernate-03-Association-Mapping</module>-->
 <!--        <module>Hibernate-04-Collection-Mapping</module>-->
 <!--        <module>Hibernate-05-Inheritance-Mapping</module>-->
