@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.geekcolab.development</groupId>
+    <artifactId>Hibernate</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>Hibernate Applications</name>
+    <description>Hibernate Applications</description>
+
+    <modules>
+        <module>Hibernate-Shared</module>
+        <module>Hibernate-00-Helloworld</module>
+        <module>Hibernate-01-Entity-Mapping</module>
+<!--        <module>Hibernate-02-Persistence-API</module>-->
+<!--        <module>Hibernate-03-Association-Mapping</module>-->
+<!--        <module>Hibernate-04-Collection-Mapping</module>-->
+<!--        <module>Hibernate-05-Inheritance-Mapping</module>-->
+<!--        <module>Hibernate-06-Complex-Mapping</module>-->
+<!--        <module>Hibernate-07-Hql</module>-->
+<!--        <module>Hibernate-08-Concurrency</module>-->
+<!--        <module>Hibernate-09-Optimization</module>-->
+<!--        <module>Hibernate-10-Applications</module>-->
+    </modules>
+
+    <properties>
+
+        <java.version>16.0.1</java.version>
+
+        <maven.compiler.source>16</maven.compiler.source>
+        <maven.compiler.target>16</maven.compiler.target>
+        <maven.compiler.version>3.8.1</maven.compiler.version>
+
+        <!-- Generic properties -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <!-- Lombok -->
+        <lombok.version>1.18.20</lombok.version>
+
+        <!-- Hibernate / JPA -->
+        <hibernate.version>5.4.32.Final</hibernate.version>
+
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.geekcolab.development</groupId>
+            <artifactId>Hibernate-Shared</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.microsoft.sqlserver</groupId>
+            <artifactId>mssql-jdbc</artifactId>
+            <version>9.2.0.jre8</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${maven.compiler.version}</version>
+                    <configuration>
+                        <source>${java.version}</source>
+                        <target>${java.version}</target>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+</project>
